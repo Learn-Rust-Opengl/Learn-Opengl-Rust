@@ -1,0 +1,2 @@
+# About
+This is a tutorial for learning [`OpenGL`](https://www.khronos.org/opengl/wiki/). In this tutorial, we will use the rust programming language. We will go over thing in a similar way to the [learnopengl.com](www.learnopengl.com). We will learn how glsl works and a how to make calls to the gpu. Rust is a great low level choose for [`OpenGL`](https://www.khronos.org/opengl/wiki/). It will allow us to easily grow our code and install dependencies with easy.

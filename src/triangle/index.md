@@ -1,0 +1,2 @@
+# Triangle
+In [`OpenGL`](https://www.khronos.org/opengl/wiki/) and other low level graphic apis, things start as a triangle. Goal of this part of the tutorial is for you get a "hello world" triangle on screen. A "hello world" triangle is rainbow triangle to test wether your graphics api is setup correctly. Hence, the name of "hello world" triangle. 
