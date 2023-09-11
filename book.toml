@@ -14,3 +14,6 @@ assets_version = "2.0.2" # do not edit: managed by `mdbook-admonish install`
 [output.html]
 git-repository-url = "https://github.com/Learn-Rust-Opengl/Learn-Opengl-Rust"
 additional-css = ["src/css/mdbook-admonish.css"]
+
+[output.html.redirect]
+"opengl" = "https://www.khronos.org/opengl/wiki/"

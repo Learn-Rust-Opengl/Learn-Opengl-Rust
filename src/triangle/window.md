@@ -19,7 +19,6 @@ fn main() {unsafe {
     {
         panic!("error");
     }
-}
 ```
 
 Now, that we have set up [`SDL2`](https://www.libsdl.org).Time to create an [`OpenGL`](https://www.khronos.org/opengl/wiki/) window.
@@ -30,4 +29,31 @@ Now, that we have set up [`SDL2`](https://www.libsdl.org).Time to create an [`Op
     /*
         flag1 | flag2
     */
+    if window.is_null() {
+        panic!("Window is null");
+    }
 ```
+
+If you run this you might be luckly and just see as the window opens for only a slit of a second. This is because it doesnt have a loop and no input. Time to add them:
+```rust
+/// Main Function
+    let mut events = SDL_Event {
+        type_: 0
+    }; // this is a union that SDL uses for input
+    loop {
+        SDL_PollEvents(&mut events); // Gets the new input from the os
+
+        if events.type_ = SDL_EventType::SDL_Quit as u32 { // Checks if the event is a the application closing.
+            break
+        }
+    }
+```
+
+We can this part with clean up
+```rust
+// Main Function
+    SDL_Quit()
+}}
+```
+
+If you did everything right a window should open and close when requested. If so, move on to triangles.
